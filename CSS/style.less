@@ -1,0 +1,55 @@
+// compress: true
+@import "_vars";
+@import "fonts.css";
+
+
+
+body {
+    margin: 0;
+    font-family: "MuseoSansMedium";
+    font-weight: normal;
+    font-size: 1rem;
+    color: @black;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+
+// Blocks
+@import "_blocks/_header-top.less";
+@import "_blocks/_slide.less";
+@import "_blocks/_page.less";
+@import "_blocks/_form.less";
+@import "_blocks/_payment.less";
+@import "_blocks/_main.less";
+@import "_blocks/_delivery.less";
+@import "_blocks/_company.less";
+@import "_blocks/_footer.less";
+@import "_blocks/_recall.less";
+@import "_blocks/_question.less";

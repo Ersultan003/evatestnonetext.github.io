@@ -1,0 +1,128 @@
+// main: ..//style.less
+
+.payment {
+    padding: 50px 0;
+    background: url(.././images/dest/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h2 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .payment__wrapper {
+        width: 700px;
+        margin: 50px auto;
+
+        .payment__inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            margin-bottom: 30px;
+
+            .payment__item {
+                width: 330px;
+                color: #6C6C6C;
+
+                h4 {
+                    text-transform: uppercase;
+                }
+
+                p {
+                    line-height: 24px;
+                    font-size: 18px;
+                }
+
+                .payment__title {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 15px;
+
+                    .payment__picture {
+                        margin-right: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:689px) {
+    .payment {
+        padding: 50px 30px;
+
+        h2 {
+            font-size: 25px;
+        }
+
+        .payment__wrapper {
+            width: 300px;
+
+            .payment__inner {
+                flex-direction: column;
+                margin-bottom: 30px;
+
+                .payment__item {
+                    margin-bottom: 35px;
+
+                    h4 {
+                        font-size: 14px;
+                    }
+
+                    p {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:425px) {
+    .payment {
+        padding: 50px 30px;
+
+        h2 {
+            font-size: 25px;
+        }
+
+        .payment__wrapper {
+            width: 300px;
+
+            .payment__inner {
+                flex-direction: column;
+                margin-bottom: 30px;
+
+                .payment__item {
+                    margin-bottom: 35px;
+
+                    h4 {
+                        font-size: 14px;
+                    }
+
+                    p {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@media screen and (max-width:320px) {
+    .payment {
+        .payment__wrapper {
+            width: 250px;
+
+            .payment__inner {
+                .payment__item {
+                    width: 275px;
+                }
+            }
+        }
+    }
+}

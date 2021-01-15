@@ -1,0 +1,130 @@
+// main: ..//style.less
+
+
+
+
+
+.recall {
+    padding: 100px 0;
+    background: url(.././images/dest/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .recall__header {
+        margin-bottom: 80px;
+        text-align: center;
+    }
+
+    p {
+        color: #6C6C6C;
+        font-family: "MuseoSansLight";
+        font-size: 20px;
+    }
+
+    .recall__wrapper {
+        width: 800px;
+        margin: 0 auto;
+
+        .recall__item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 100px;
+
+            .recall__img {
+                margin-right: 30px;
+            }
+
+            h3 {
+                color: @pink;
+                font-size: 25px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    .recall {
+        .recall__wrapper {
+            width: 700px;
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .recall {
+        .recall__wrapper {
+            width: 600px;
+        }
+    }
+}
+
+@media screen and (max-width:425px) {
+    .recall {
+        padding: 70px 0;
+
+        .recall__header {
+            text-align: left;
+            margin-bottom: 60px;
+        }
+
+        .recall__wrapper {
+            width: 400px;
+            flex-direction: column;
+            display: flex;
+
+            .recall__item {
+                margin-top: 5px;
+                margin-bottom: 40px;
+                flex-direction: column;
+                text-align: left;
+                position: relative;
+
+                .recall__img {
+                    position: absolute;
+                    left: 0;
+                }
+
+                .recall__text {
+                    margin-top: 130px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:425px) {
+    .recall {
+        .recall__wrapper {
+            width: 350px;
+        }
+    }
+}
+
+@media screen and (max-width:375px) {
+    .recall {
+        p {
+            font-size: 18px;
+        }
+
+        .recall__wrapper {
+            width: 350px;
+        }
+    }
+}
+
+@media screen and (max-width:320px) {
+    .recall {
+        p {
+            font-size: 16px;
+        }
+
+        .recall__wrapper {
+            width: 280px;
+
+
+        }
+    }
+}

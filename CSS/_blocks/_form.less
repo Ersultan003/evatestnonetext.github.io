@@ -1,0 +1,341 @@
+//main:..//style.less
+
+
+
+#myform {
+    display: none;
+    position: fixed;
+    padding: 100px 0px;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+
+}
+
+
+.form__content {
+    z-index: 199;
+    width: 220px;
+    width: 500px;
+    margin: 0 auto;
+    position: relative;
+    background: @white;
+    border-radius: 19px;
+
+    .form__header {
+        background-color: @pink;
+        text-align: center;
+        margin-bottom: 30px;
+        padding: 34px;
+        border-top-left-radius: 19px;
+        -moz-border-radius-topleft: 19px;
+        -webkit-border-top-left-radius: 19px;
+        border-top-right-radius: 19px;
+        -moz-border-right-topleft: 19px;
+        -webkit-border-top-right-radius: 19px;
+
+        h3 {
+            margin-top: 35px;
+            color: @white;
+            font-size: 20px;
+        }
+
+        .form__img {
+            width: 99px;
+            margin: 0 auto;
+            position: absolute;
+            top: -9%;
+            left: 39%;
+            border-radius: 50%;
+        }
+    }
+
+    .form__body {
+        width: 384px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form__btn {
+        width: 240px;
+        margin: 30px auto;
+
+        .btn {
+            text-decoration: none;
+            font-size: 20px;
+            border-radius: 44px;
+            padding: 15px 30px;
+            background: @pink;
+            color: @white;
+            transition: 0.2s;
+
+            &:hover {
+                background: @pink;
+            }
+        }
+    }
+
+    .form__footer {
+        padding-bottom: 30px;
+        text-align: center;
+
+        h4 {
+            font-family: "MuseoSansLight";
+            font-size: 17px;
+        }
+    }
+}
+
+.form__close,
+.contact__close {
+    width: 75%;
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+
+    .close {
+        margin: 100px 30px 0 30px;
+        color: @pink;
+        border: none;
+        background: transparent;
+        font-size: 60px;
+        cursor: pointer;
+        outline: none;
+        transition: .2s linear;
+
+        &:hover {
+            transform: rotate(5deg);
+        }
+    }
+}
+
+
+#contactUs {
+    display: none;
+    position: fixed;
+    padding-top: 100px;
+    z-index: 900;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+
+    h3 {
+        font-size: 30px;
+    }
+
+    .form__close {
+        z-index: 1;
+    }
+}
+
+.contactUs__body {
+    width: 350px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+
+    .contactUs__img {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.contactUs__item {
+    margin-bottom: 2rem;
+}
+
+.form__phone,
+.form__email {
+    margin-top: 1rem;
+    text-align: center;
+    background: @pink;
+    border-radius: 44px;
+    padding: 10px 20px;
+
+    a {
+        text-decoration: none;
+        color: @white;
+        font-size: 20px;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+#name,
+#phone,
+#address {
+    width: 400px;
+    height: 55px;
+    border: 4px solid @gray;
+    border-radius: 44px;
+    margin-bottom: 16px;
+    font-size: 20px;
+    padding: 10px;
+    border-color: @gray;
+    opacity: 65%;
+}
+
+#deliveryOrder,
+#toOrder,
+#add,
+#spot,
+#byCard,
+#orderAccepted {
+    width: 320px;
+    text-decoration: none;
+    border: 3px solid @pink;
+    border-radius: 37px;
+    color: @pink;
+    font-size: 23px;
+    font-family: "MuseoSansBold";
+    padding: 10px 0;
+    cursor: pointer;
+    background: none;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+
+    &:hover {
+        background-color: @pink;
+        color: @white;
+    }
+
+}
+
+#spot,
+#byCard {
+    width: 400px;
+    border: 3px solid #aaaaaa;
+    color: @black;
+
+    &:hover {
+        background-color: @pink;
+    }
+}
+
+@media screen and (max-width:1024px) {
+
+    .form__close,
+    .contact__close {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:425px) {
+
+    #deliveryOrder,
+    #toOrder,
+    #orderAccepted {
+        width: 245px;
+        font-size: 20px;
+    }
+
+    #name,
+    #phone,
+    #address {
+        width: 340px;
+        margin: 0 auto 16px auto;
+    }
+
+    #spot,
+    #byCard {
+        width: 300px;
+        font-size: 16px;
+        margin: auto;
+    }
+
+    .form__content {
+        width: 400px;
+    }
+}
+
+
+@media screen and (max-width:375px) {
+    .form {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .form__content {
+        width: 350px;
+
+        .form__header {
+            .form__img {
+                left: 35%;
+            }
+        }
+    }
+
+    .contactUs__body {
+        width: 250px;
+    }
+
+    #name,
+    #phone,
+    #address {
+        width: 265px;
+        margin: 0 40px 16px 40px;
+    }
+
+
+
+}
+
+@media screen and(max-width:320px) {
+    #contactUs h3 {
+        font-size: 25px;
+    }
+
+    .form__content {
+        width: 300px;
+
+        .form__header {
+            .form__img {
+                left: 33%;
+            }
+        }
+
+        .form__footer {
+            h4 {
+                font-size: 14px;
+            }
+        }
+
+    }
+
+    #deliveryOrder,
+    #toOrder,
+    #add,
+    #spot,
+    #byCard,
+    #orderAccepted {
+        width: 270px;
+
+
+    }
+
+    #name,
+    #phone,
+    #address {
+        width: 220px;
+        margin: 0 40px 16px 40px;
+    }
+
+}

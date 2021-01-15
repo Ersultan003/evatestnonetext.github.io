@@ -1,0 +1,150 @@
+// main:..//style.less
+.slideshow-container {
+    max-width: 1400px;
+    height: 100%;
+    position: relative;
+    margin: 30px auto auto auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    border-radius: 44px;
+    width: 100%;
+}
+
+.mySlides.active {
+    display: inline;
+    background: transparent;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: @white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6 ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: #d33e8652;
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.slide__dots {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.dot {
+    cursor: pointer;
+    height: 18px;
+    width: 18px;
+    max-width: 0 2px;
+    background-color: rgb(223, 223, 223);
+    display: inline-block;
+    border-radius: 50%;
+    transition: background-color 0.6 ease;
+}
+
+.dot.active {
+    background-color: #FFEBF0;
+}
+
+
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    top {
+        opacity: .1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    top {
+        opacity: .1
+    }
+
+}
+
+
+.slideshow-wrapper {
+    max-width: 300px;
+    position: relative;
+    margin: auto;
+
+    img {
+        width: 100%;
+    }
+
+    .delivery__prev,
+    .delivery__next {
+        color: @pink;
+        font-size: 45px;
+
+        &:hover {
+            background-color: transparent;
+        }
+    }
+
+
+}
+@media screen and (max-width:1024px) {
+    .slideshow-container {
+        margin: 30px auto auto auto;
+
+    }
+}
+
+@media screen and (max-width:671px) {
+    .slideshow-container {
+        display: none;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .slideshow-container {
+        display: none;
+    }
+}

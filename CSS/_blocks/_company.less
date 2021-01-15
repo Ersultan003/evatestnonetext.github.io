@@ -1,0 +1,147 @@
+// main: ..//style.less
+
+.company {
+    padding: 100px 0;
+    background: url(.././images/dest/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h2 {
+        text-align: center;
+        font-size: 45px;
+    }
+
+    .company__wrapper {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .company__picture {
+            width: 670px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .company__list {
+            margin-top: 30px;
+
+            p {
+                margin-bottom: 30px;
+                color: #6C6C6C;
+                font-size: 18px;
+            }
+
+        }
+
+        .company__left,
+        .company__right {
+            width: 680px;
+        }
+
+
+    }
+}
+
+.riza__picture {
+    display: none;
+
+    img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .company {
+        .company__wrapper {
+            flex-direction: column;
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .company {
+        padding: 50px 0;
+
+        .company__wrapper {
+
+            .company__right,
+            .company__left {
+                width: 700px;
+                padding: 0 30px;
+
+                .company__picture {
+                    width: 630px;
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width:425px) {
+
+    .company {
+        padding: 35px 0;
+
+        h2 {
+            font-size: 30px;
+        }
+
+        .company__wrapper {
+            margin-top: 0;
+
+            .company__right,
+            .company__left {
+                width: 400px;
+                margin: auto;
+                padding: 0;
+
+                .company__picture {
+                    width: 390px;
+                }
+            }
+
+        }
+    }
+
+    .riza__picture {
+        display: block;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .company {
+        .company__wrapper {
+
+            .company__right,
+            .company__left {
+                width: 350px;
+
+                .company__picture {
+                    width: 345px;
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width:320px) {
+    .company {
+        .company__wrapper {
+
+            .company__right,
+            .company__left {
+                width: 285px;
+
+                .company__picture {
+                    width: 280px;
+                }
+            }
+
+        }
+    }
+}

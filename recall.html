@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evanorm</title>
+    <link rel="stylesheet" href="CSS/style.css">
+
+</head>
+
+<body>
+    <div class="header-top">
+        <div class="container">
+            <div class="header__inner">
+                <div class="logo">
+                    <a href="index.html" class="logo">
+                        <img src="images/dest/logoeva.svg" alt="">
+                    </a>
+                </div>
+                <nav class="nav">
+                    <ul class="header__list">
+                        <li><a href="index.html" class="header__item">Каталог</a></li>
+                        <li><a href="payment.html" class="header__item ">Оплата и доставка</a></li>
+                        <li><a href="question.html" class="header__item">Частые вопросы</a></li>
+                        <li><a href="company.html" class="header__item">О компании</a></li>
+                        <li><a href="recall.html" class="header__item">О нас говорят</a></li>
+
+                        <li><a href="#" class="header__item" id="popupUs">Контакты</a></li>
+                        <li><a href="#" class="header__item " style="background-color: #FFA9B8; color: #fff;">Рус</a></li>
+                        <li><a href="#" class="header__item ">Каз</a></li>
+                    </ul>
+                </nav>
+                <button class="Header-MenuBtn">
+                    <a href="#" class="basket">
+                        <div class="basket__img">
+                            <img src="images/dest/basket.svg" alt="">
+                            <data aria-label="В корзине товаров">1</data>
+                        </div>
+                    </a>
+                </button>
+            </div>
+        </div>
+    </div>
+    <a id="contact" class="adapContact" style="display: none;">Оплата и доставка</a>
+    <div class="hamburger-menu">
+        <div class="hamburger__inner">
+            <input type="checkbox" id="check-menu">
+            <label for="check-menu"></label>
+            <div class="hamburger__content">
+                <div class="hamburger__logo">
+                    <a href="index.html">
+                        <img src="images/dest/logoeva.svg" class="logo" alt="">
+                    </a>
+                </div>
+                <button class="Header-MenuBtn">
+                    <a href="#" class="basket">
+                        <div class="basket__img">
+                            <img src="images/dest/basket.svg" alt="">
+                            <data aria-label="В корзине  товаров">1</data>
+                        </div>
+                    </a>
+                </button>
+            </div>
+            <div class="burger-line first"></div>
+            <div class="burger-line second"></div>
+            <div class="burger-line third"></div>
+            <div class="burger-line fourth"></div>
+            <nav class="main-menu">
+                <li><a href="index.html" class="header__item">Каталог</a></li>
+                <li><a href="payment.html" class="header__item">Оплата и доставка</a></li>
+                <li><a href="question.html" class="header__item">Частые вопросы</a></li>
+                <li><a href="company.html" class="header__item">О компании</a></li>
+                <li><a href="recall.html" class="header__item">О нас говорят</a></li>
+                <li><a href="#" class="header__item adapPopupUs">Контакты</a></li>
+            </nav>
+        </div>
+    </div>
+    <div id="myform" class="form">
+        <div class="form__close">
+            <button class="close">
+                &#215;
+            </button>
+        </div>
+        <div class="form__content">
+            <div class="form__header">
+                <div class="form__img">
+                    <img src="images/dest/formimg.svg" alt="">
+                </div>
+                <h3>Чтобы наши эксперты с Вами связались
+                    заполните форму</h3>
+            </div>
+            <div class="form__body">
+                <input type="name" id="name" placeholder="Ваше имя">
+                <input type="phone" id="phone" placeholder="Номер Телефона">
+            </div>
+            <div class="form__btn">
+                <a href="#" class="btn">Перезвоните мне</a>
+            </div>
+            <div class="form__footer">
+                <h4>
+                    Нажимая на кнопку Вы соглашаетесь на
+                    обработку персональных данных
+                </h4>
+            </div>
+        </div>
+    </div>
+    <div id="contactUs" class="form">
+        <div class="contact__close">
+            <button class="close">
+                &#215;
+            </button>
+        </div>
+        <div class="form__content">
+            <div class="form__header">
+                <div class="form__img">
+                    <img src="images/dest/formimg1.png" alt="">
+                </div>
+                <h3>Свяжитесь с нами!</h3>
+            </div>
+            <div class="contactUs__body">
+                <div class="contactUs__item">
+                    <div class="contactUs__img">
+                        <img src="images/dest/formphone.png" alt="">
+                    </div>
+                    <div class="form__phone">
+                        <a href="tel:+77477986655">+7 747 798 66 55</a>
+                    </div>
+                </div>
+                <div class="contactUs__item">
+                    <div class="contactUs__img">
+                        <img src="images/dest/formemail.png" alt="">
+                    </div>
+                    <div class="form__email">
+                        <a href="email:info@rizaherb.com">info@rizaherb.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slideshow-container">
+        <div class="mySlides fade active">
+            <img src="images/dest/slide.png" alt="">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/dest/slide2.png" alt="">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/dest/slide3.png" alt="">
+        </div>
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+        <div class="slide__dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+    <div class="recall">
+        <div class="container">
+            <div class="recall__wrapper">
+                <div class="recall__header">
+                    <p>Evanorm - это природное натуральное средство для женского здоровья. Он помогает справиться с
+                        проблемами в женской репродуктивной системе. Биогенная формула на основе экстрактов красной
+                        щетки, боровой матки, трав тысячелистника способствует улучшению состояния женского здоровья.
+                    </p>
+                </div>
+                <div class="recall__item">
+                    <div class="recall__img">
+                        <img src="images/dest/recallimg1.svg" alt="">
+                    </div>
+                    <div class="recall__text">
+                        <h3>Домашний очаг</h3>
+                        <p>Evanorm - это природное натуральное средство для женского здоровья. Он помогает справиться с
+                            проблемами в женской репродуктивной системе. Биогенная формула на основе экстрактов красной
+                            щетки, боровой матки, трав тысячелистника способствует улучшению состояния женского
+                            здоровья. </p>
+                    </div>
+                </div>
+                <div class="recall__item">
+                    <div class="recall__img">
+                        <img src="images/dest/recallimg2.svg" alt="">
+                    </div>
+                    <div class="recall__text">
+                        <h3>Cosmopolitan</h3>
+                        <p>Evanorm - это природное натуральное средство для женского здоровья. Он помогает справиться с
+                            проблемами в женской репродуктивной системе. Биогенная формула на основе экстрактов красной
+                            щетки, боровой матки, трав тысячелистника способствует улучшению состояния женского
+                            здоровья. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__address">
+                    <div class="address__icon">
+                        <img src="images/dest/addressicon.svg" alt="">
+                    </div>
+                    <a href="#">г. Алматы, ул. Достык, д. 192/2</a>
+                </div>
+                <a href="index.html" class="logo">
+                    <img src="images/dest/logoriza.svg" alt="">
+                </a>
+                <div class="footer__email">
+                    <div class="email__icon">
+                        <img src="images/dest/emailicon.svg" alt="">
+                    </div>
+                    <a href="#">info@rizaherb.com</a>
+                </div>
+
+            </div>
+            <div class="footer__bottom">
+                <p>Изготовлено: ООО "Сашера мед" <br>
+                    По заказу: ТОО "Riza Herb"
+                    Республика Казахстан</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
